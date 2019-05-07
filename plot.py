@@ -1,7 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d.axes3d import Axes3D, get_test_data
+from matplotlib import cm
 
 data = np.loadtxt("onda.dat")
+x=np.linspace(0,1,data.shape[1])
 
 plt.figure(figsize=(15,5))
 plt.subplot(1,2,1)
